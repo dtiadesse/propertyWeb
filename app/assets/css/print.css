@@ -1,0 +1,49 @@
+html {
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+.page {
+  margin: 0;
+}
+
+/* .property-name {
+  color: #003865 !important;
+}
+
+.order {
+  background-color: #003865 !important;
+  color: white !important;
+}
+
+.heading {
+  background-color: #eaeaea !important;
+  color: #686b6b !important;
+}
+
+
+.unitMix .col-heading {
+  color: #E4002B !important;
+}
+
+.unitMix tbody tr,
+.heading-row {
+  border-bottom: 1px solid rgb(0 0 0 / 75%) !important;
+}
+
+
+.unitMix td.unit {
+  color: #0093b2 !important;
+}
+
+.page-break {
+  page-break-after: always !important;
+}
+
+.unitMix td.unit {
+  color: #0093AD !important;
+}
+
+.spec-title {
+  color: #0093AD !important;
+} */

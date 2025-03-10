@@ -1,0 +1,359 @@
+@import 'print.css' print;
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/assets/fonts/GothamSSm-Light_Web.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('/assets/fonts/GothamSSm-Bold_Web.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: white !important;
+    overflow: visible;
+    font-family: 'Gotham' !important;
+    font-size: 12px;
+    color: var(--cw-grey) !important;
+}
+
+
+.page {
+    width: 100%;
+    width: 1080px;
+    min-height: 820px;
+    margin: 0 auto;
+    font-family: 'Gotham';
+    font-size: 12px;
+    align-content: flex-start;
+    position: relative;
+}
+
+.footnote {
+    width: 100%;
+    font-style: italic;
+    padding: 3rem 0;
+}
+
+.unitmix-footnote {
+    padding-top: 0.5rem;
+    font-style: italic;
+}
+
+
+.condensed .page {
+    min-height: auto !important;
+    border-bottom: 1px solid var(--border-grey) !important;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.page-break {
+    page-break-after: always !important;
+}
+
+.left-col {
+    height: calc(100% - 3.5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.unitMix .heading {
+    background-color: #eaeaea !important;
+    padding: 0.25rem;
+    font-weight: normal;
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.section {
+    margin: 1.75rem 0 0;
+    border-top: 1px solid var(--border-grey) !important;
+    padding: 1rem 0 0;
+}
+
+.section.light {
+    margin: 1.75rem 0 0;
+    border-top: 1px solid var(--border-grey) !important;
+    padding: 1rem 0 0;
+}
+
+.section label {
+    color: var(--dark-blue) !important;
+    font-weight: 700;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.section.summary label {
+    padding-bottom: 1rem;
+}
+
+
+
+.footer-row .first-col {
+    font-weight: 700;
+}
+
+.unitMix td {
+    color: var(--grey) !important;
+}
+
+.unitMix.monthly-fee,
+.unitMix.sale-details {
+    position: relative;
+    top: -5px;
+}
+
+.unitMix td.colored-col {
+    color: var(--dark-blue) !important;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+
+.unitMix .col-heading {
+    color: var(--red) !important;
+    font-size: 11px;
+    padding: 0.25rem 0;
+    text-align: center;
+}
+
+.unitMix .col-content.bold {
+    font-weight: 500 !important;
+    font-family: 'GothamBold';
+}
+
+.unitMix tr.subject-property {
+    font-weight: 600;
+}
+
+.specifics {
+    flex-grow: 2;
+}
+
+.specifics .unit-features {
+    min-height: 550px;
+    height: 100%;
+    position: relative;
+    padding-right: 1rem;
+}
+
+.specifics ul li::marker {
+    color: var(--red) !important;
+}
+
+.red .unitMix .col-heading,
+.red .specifics ul li::marker {
+    color: var(--red) !important;
+}
+
+.darkred .unitMix .col-heading,
+.darkred .specifics ul li::marker {
+    color: var(--dark-red) !important;
+}
+
+.red .star-icon {
+    fill: var(--red) !important;
+}
+
+.darkred .star-icon {
+    fill: var(--dark-red) !important;
+}
+
+.red .subject-property-bg {
+    background-color: #E5F4F7 !important;
+}
+
+.inhouse {
+    background-color: #E5F4F7 !important;
+}
+
+.darkred .subject-property-bg {
+    background-color: #BFE4EB !important;
+}
+
+.red .vad-record {
+    background-color: #f5e5e3 !important;
+}
+
+.darkred .vad-record {
+    background-color: #E3C3BF !important;
+}
+
+
+.unitMix tbody tr,
+.heading-row {
+    border-bottom: 1px solid var(--border-grey) !important;
+}
+
+.unitMix tbody tr.no-border {
+    border-bottom: 0px white solid !important;
+}
+
+.unitMix tbody tr:last-child {
+    border-bottom: none !important;
+}
+
+.unitMix .col-content {
+    padding: 0.1rem 0;
+    text-align: center;
+    font-size: 11px;
+}
+
+.unitMix .first-col {
+    padding-left: 0.25rem;
+    text-align: left;
+}
+
+.unitMix .last-col {
+    padding-right: 0.25rem;
+    text-align: right;
+}
+
+.unitMix .last-col.col-heading {
+    width: 6.5rem;
+}
+
+.unitMix .last-col.col-content {
+    text-align: center;
+}
+
+.unitMix td.unit {
+    color: var(--dark-blue) !important;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.footer-row {
+    background-color: var(--light-grey) !important;
+    border-bottom: 0px white solid !important;
+}
+
+
+
+span.spec-title.unit::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    width: 0.5px;
+    height: 100%;
+    border-right: 1px solid var(--border-grey) !important;
+}
+
+.property-name {
+    padding: 0.25rem 0;
+    color: var(--indigo) !important;
+    font-size: 0.95rem;
+    /* font-weight: 600 !important; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'GothamBold';
+}
+
+.property-name.main-property {
+    color: var(--dark-blue) !important;
+}
+
+.order {
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: var(--indigo) !important;
+    color: white !important;
+    width: 1rem;
+    height: 1rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.star-icon {
+    fill: var(--red) !important;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.address {
+    margin-bottom: 0.75rem;
+    font-size: 13px;
+}
+
+.stat-table {
+    margin-bottom: 0.75rem;
+    font-size: 11px;
+    width: 98%;
+}
+
+.stat-table .right-align {
+    text-align: right;
+}
+
+.property-image-container {
+    width: 255px !important;
+    height: 170px !important;
+    background: var(--light-grey) url('/images/no-photo-report.png') center center no-repeat !important;
+    background-size: cover !important;
+    display: inline-block;
+}
+
+.property-image {
+    width: 255px;
+    height: 170px;
+}
+
+.managed-by {
+    font-size: 10px;
+}
+
+.property-info {
+    margin-bottom: 2rem;
+}
+
+.slds-avatar_large {
+    width: 16rem;
+    height: auto;
+}
+
+.spec-title {
+    color: var(--dark-blue) !important;
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+}
+
+.specifics ul {
+    margin-top: 0.5rem;
+}
+
+.specifics ul li {
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+    list-style: disc;
+    list-style-position: inside;
+    padding: 0.1rem 0;
+}
+
+.pname {
+    text-transform: uppercase;
+}
+
+.unit-feature.asterisk::after {
+    content: " *";
+}
+
+.asterisk-legend {
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
